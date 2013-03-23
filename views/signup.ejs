@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<form action="../signup" method="post">
+		<label for="username">Username</label>
+	    <input type="text" name="username" />
+		<input type="hidden" value="<%= checkID %>" name="checkID" />
+		<label for="password">Password</label>
+	    <input type="password" name="password" />
+	    <input type="submit">
+		<a href="../loginWindow/<%= checkID %>">Log In</a>
+	</form>
+  </body>
+</html>
